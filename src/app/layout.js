@@ -1,5 +1,7 @@
+import { Background } from '@/components/Background'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,20 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ul className="background">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        {children}
-        <footer>este es el footer</footer>
+        <Background />
+        <main className="grid h-screen justify-center items-center">
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   )
