@@ -1,6 +1,6 @@
 # Generador de QR
 
-desarrollado con Next + ReactJs (Javascript) + Tailwind
+- desarrollado con Next + ReactJs (Javascript) + Tailwind
 
 ## Getting Started
 
